@@ -11,7 +11,7 @@
 3) Run above steps to trigger automated version release.
 
 ## Install
-- To install the package, execute the following command:
+- To install the package, execute the following command and fill in latest VERSION from git:
     '''
     pip install git+https://github.com/remla25-team1/lib-ml.git@VERSION
     '''
