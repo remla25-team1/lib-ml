@@ -24,6 +24,10 @@ jobs:
           pip install -r requirements.txt
           pip install pylint flake8 bandit pytest coverage
 
+      - name: Set PYTHONPATH for custom pylint plugin
+        run: |
+          echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
+
       - name: Run pylint
         run: |
           pylint lib_ml --rcfile=.pylintrc
