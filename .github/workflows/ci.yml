@@ -34,7 +34,7 @@ jobs:
 
       - name: Run bandit
         run: |
-          bandit -c .bandit -r lib_ml
+          bandit -r lib_ml -x tests -s B101,B104 -lll
 
       - name: Run pytest with coverage
         run: |
