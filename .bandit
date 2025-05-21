@@ -1,0 +1,5 @@
+[bandit]
+target = lib_ml
+exclude = tests
+skips = B101,B104
+severity-level = LOW
