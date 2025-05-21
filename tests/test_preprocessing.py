@@ -19,6 +19,5 @@ def test_process_item_stopwords():
     pre = Preprocessor()
     text = "This is not a test"
     result = pre.process_item(text)
-    # 'not' 应该保留，'is' 应该被去除
     assert "not" in result
     assert "is" not in result

@@ -1,9 +1,7 @@
 from pylint.checkers import BaseChecker
-from pylint.interfaces import IAstroidChecker
+from pylint.checkers.utils import check_messages
 
 class MLCodeSmellChecker(BaseChecker):
-    __implements__ = IAstroidChecker
-
     name = 'ml-code-smell-checker'
     priority = -1
     msgs = {
