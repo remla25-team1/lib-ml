@@ -13,7 +13,7 @@ class Preprocessor:
         self.all_stopwords = stopwords.words('english')
         self.all_stopwords.remove('not')  # 'not' is not a stopword
 
-    # this is what model training needs 
+    # this is what model training needs
     def process(self, dataset):
         corpus = []
         for i in range(0, 900):
