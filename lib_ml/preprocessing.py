@@ -26,7 +26,10 @@ class Preprocessor:
         review = re.sub('[^a-zA-Z]', ' ', item)
         review = review.lower()
         review = review.split()
-        review = [self.ps.stem(word) for word in review \
-                    if word not in set(self.all_stopwords)]
+        review = [
+            self.ps.stem(word)
+            for word in review
+            if word not in set(self.all_stopwords)
+        ]
         review = ' '.join(review)
         return review
