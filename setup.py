@@ -15,6 +15,6 @@ setup(
     python_requires='>=3.10',
     include_package_data=True,
     package_data={
-        'lib_ml': ['.flake8', '.pylintrc'],  # or move these files into lib_ml/
+        'lib_ml': ['.flake8', '.pylintrc', 'pylint_ml_smells.py'],  # or move these files into lib_ml/
     }
 )
