@@ -34,7 +34,7 @@ jobs:
 
       - name: Run flake8
         run: |
-          pylint lib_ml --rcfile=lib_ml/.flake8
+          flake8 lib_ml --rcfile=lib_ml/.flake8
 
       - name: Run bandit
         run: |
