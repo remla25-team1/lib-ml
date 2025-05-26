@@ -26,7 +26,7 @@ jobs:
 
       - name: Set PYTHONPATH for custom pylint plugin
         run: |
-          echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
+          echo "PYTHONPATH=$PYTHONPATH:$(pwd)/lib_ml" >> $GITHUB_ENV
 
       - name: Run pylint
         run: |
@@ -34,7 +34,7 @@ jobs:
 
       - name: Run flake8
         run: |
-          flake8 lib_ml --rcfile=lib_ml/.flake8
+          flake8 lib_ml --config=lib_ml/.flake8
 
       - name: Run bandit
         run: |
