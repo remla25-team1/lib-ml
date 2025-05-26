@@ -28,6 +28,11 @@ jobs:
         run: |
           echo "PYTHONPATH=$PYTHONPATH:$(pwd)/lib_ml" >> $GITHUB_ENV
 
+      - name: Run black for auto-formatting
+        run: |
+          pip install black
+          black lib_ml
+
       - name: Run pylint
         run: |
           pylint lib_ml --rcfile=lib_ml/.pylintrc
