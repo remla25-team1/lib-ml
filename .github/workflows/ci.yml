@@ -30,11 +30,11 @@ jobs:
 
       - name: Run pylint
         run: |
-          pylint lib_ml --rcfile=.pylintrc
+          pylint lib_ml --rcfile=./lib-ml/.pylintrc
 
       - name: Run flake8
         run: |
-          flake8 lib_ml --config=.flake8
+          flake8 lib_ml --config=./lib-ml/.flake8
 
       - name: Run bandit
         run: |
