@@ -2,14 +2,19 @@ name: Release lib-ml
 
 on: 
     push:
-        tags: 'v*.*.*'
+        tags: 
+          - 'v*.*.*'
+          - 'v*.*.*-pre-*-*'
 
 jobs:
     build:
-        runs-on: ubuntu-24.04
+        runs-on: ubuntu-latest
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
+              with:
+                ref: ${{ github.ref }}    # The exact tag being released
+                fetch-depth: 0            # Get full history for version checking
 
             - name: Set up Python 3.12.2
               uses: actions/setup-python@v5
