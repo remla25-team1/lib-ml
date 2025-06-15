@@ -1,6 +1,6 @@
 # lib-ml
 We have two kinds of tags: 
-- Experimental versions of the style vX.X.X-pre-DATE-XXX.These versions don''t need to be working, and are for developing use.
+- Experimental versions of the style vX.X.X-pre-DATE-XXX. These versions don't need to be working, and are for developing use.
 - Production versions of the style vX.X.X. These are always working versions with new features implemented.
 
 ## To trigger the automated version release:
@@ -10,7 +10,7 @@ We have two kinds of tags:
 4) Choose the type of tag you want: dated-pre for experimental versions, and semver for production versions.
 5) Click the “Run workflow” button.
 6) When this workflow has been finished, you can go to "Release lib-ml" in the list on the left.
-7) As you can see a workflow has automatically been triggered by the releasing of a new version.
+7) As you can see a workflow has automatically been triggered by the release of a new version.
 
 ## Install
 - To install the package, execute the following command and fill in latest VERSION from git:
